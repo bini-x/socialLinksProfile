@@ -1,0 +1,101 @@
+:root {
+	--green: hsl(75, 94%, 57%);
+	--white: hsl(0, 0%, 100%);
+	--grey: hsl(0, 0%, 20%);
+	--darkGrey: hsl(0, 0%, 12%);
+	--offBlack: hsl(0, 0%, 8%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	background-color: var(--offBlack);
+}
+
+
+.card {
+	background-color: var(--darkGrey);
+	width: fit-content;
+	margin: 50px auto;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	color: var(--white);
+	border-radius: 10px;
+}
+
+.card > img {
+	border-radius: 50%;
+
+}
+
+.card > a {
+	width: 350px;
+	padding: 15px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: var(--grey);
+	color: var(--white);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.card > a:active {
+	background-color: var(--green);
+	color: var(--offBlack);
+}
+
+.location {
+	color: var(--green);
+	font-weight: 600;
+}
+
+.name {
+	font-size: 27px;
+	font-weight: 700;
+	padding-top: 10px;
+}
+
+.description {
+	font-size: 14px;
+	font-weight: 400;
+	padding: 10px;
+}
+
+.attribution {
+	color: var(--white);
+	text-align: center;
+}
+
+@media screen and (max-width: 431px) {
+
+	.card > img {
+		width: 90px;
+	}
+
+	.name {
+		font-size: 22px;
+	}
+
+	.location {
+		font-size: 12px;
+	}
+
+	.card > a {
+		width: 250px;
+		font-size: 12px;
+	}
+
+	.description {
+		font-size: 12px;
+	}
+}
